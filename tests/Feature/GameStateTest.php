@@ -12,4 +12,6 @@ test('that empty game state can be created', function () {
         collect([]),
         false
     );
-})->throwsNoExceptions();
+
+    expect($gameState)->toBeInstanceOf(GameState::class);
+});
